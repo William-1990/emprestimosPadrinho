@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simulador | Empréstimos do Padrinho</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container nav">
+
+            <a href="index.html" class="logo">
+                <span></span>
+                Empréstimos do Padrinho
+            </a>
+
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="como-funciona.html">Como funciona</a>
+                <a href="simulador.html" class="active">Simulador</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+
+            <a href="solicitacao.html" class="btn btn-small">
+                Solicitar
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-hero">
+
+            <div class="container">
+
+                <span class="tag">SIMULADOR</span>
+
+                <h1>Simule sua solicitação</h1>
+
+                <p>
+                    Informe o valor desejado e consulte uma estimativa.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="container simulator-container">
+
+                <div class="simulator">
+
+                    <h2>Simulação</h2>
+
+                    <div class="form-group">
+
+                        <label>Quanto você precisa?</label>
+
+                        <input type="number" id="valor" placeholder="Ex.: 1000" min="0">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Prazo</label>
+
+                        <select id="prazo">
+
+                            <option value="30">30 dias</option>
+                            <option value="60">60 dias</option>
+                            <option value="90">90 dias</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button class="btn full" onclick="simular()">
+                        Calcular estimativa
+                    </button>
+
+
+                    <div class="simulation-result" id="resultado">
+
+                        <span>Valor estimado</span>
+
+                        <strong id="valorFinal">
+                            R$ 0,00
+                        </strong>
+
+                        <small>
+                            A simulação é apenas uma estimativa e não representa
+                            aprovação de crédito.
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="container footer-bottom">
+            © 2026 Empréstimos do Padrinho.
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
